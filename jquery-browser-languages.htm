@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="jquery-2.1.4.js"></script>
+		<script src="jquery-browser-languages.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$.browserLanguages(function(browserLanguages){
+					for(var index=0; index<browserLanguages.length; index++){
+						var browserLanguage = browserLanguages[index];
+						$("#list").append("<li>" + browserLanguage + "</li>");
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<ul id="list">
+		</ul>
+	</body>
+</html>
